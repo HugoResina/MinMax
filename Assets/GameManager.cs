@@ -1,9 +1,10 @@
 using System.Net.NetworkInformation;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public Tile[,] map = new Tile[3,3];
+    public Tile[,] map = new Tile[,] { };
     Tile one = new Tile();
     Tile zero = new Tile();
     Tile two = new Tile();
@@ -15,16 +16,25 @@ public class GameManager : MonoBehaviour
         //decide quien empieza 50/50
         //turno maquina -> profundidad 3
         //turno player
+        //tests de GetState
+        /*
         Debug.Log("deberia ser 1: " + GetState(new Tile[,] { { one, one, one }, { zero, zero, zero }, { zero, zero, zero } }));
         Debug.Log("deberia ser 1: " + GetState(new Tile[,] { { zero, zero, zero }, { zero, zero, zero }, { one, one, one } }));
         Debug.Log("deberia ser 2: " + GetState(new Tile[,] { { zero, zero, zero }, { two, two, two }, { zero, zero, zero } }));
         Debug.Log("deberia ser 0: " + GetState(new Tile[,] { { zero, one, zero }, { two, zero, two }, { one, zero, two } }));
         Debug.Log("deberia ser 3: " + GetState(new Tile[,] { { one, two, one }, { two, two, one }, { one, one, two } }));
+        */
+        map = new Tile[,] { { zero, zero, zero }, { zero, zero, zero }, { zero, zero, zero } };
+
     }
 
     public void MinMax(Tile[,] mapState, int depth, bool MaximizingPlayer)
     {
-
+        if(depth == 0 && GetState(mapState) != 0)
+        {
+            //
+            return;
+        }
     }
 
     public int GetState(Tile[,] mapState)
