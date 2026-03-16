@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
 
     //public Tile[,] map = new Tile[,] { };
     public Tile[] map = new Tile[9];
@@ -21,41 +22,68 @@ public class GameManager : MonoBehaviour
     public float Beta;
     //value
     public float Value;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
     private void Start()
     {
         one.TileValue = 1;
         zero.TileValue = 0;
         minusOne.TileValue = -1;
-        //decide quien empieza 50/50
-        //turno maquina -> profundidad 3
-        //turno player
+       
         //tests de GetState
-        map = new Tile[] {  zero, zero, zero , zero, zero, zero , zero, zero, zero  };
+        //Debug.Log("deberia ser 0: " + GetState(new Tile[] { zero, zero, zero, zero, zero, zero, zero, zero, zero }));
+        //Debug.Log("deberia ser 1: " + GetState(new Tile[] { one, zero, zero, zero, one, zero, zero, zero, one }));
+        //Debug.Log("deberia ser -1: " + GetState(new Tile[] { minusOne, minusOne, minusOne, zero, zero, zero, zero, zero, zero }));
+        //Debug.Log("deberia ser 0: " + GetState(new Tile[] { minusOne, zero, zero, minusOne, zero, one, zero, one, one }));
+
+        map = new Tile[9] { zero, zero, zero, zero, zero, zero, zero, zero, zero };
+
+
 
     }
 
-    Tile GetTile(int x, int y)
-    {
-        return map[x + y * 3];
-    }
+    
     public float MinMax(Tile[] mapState, int depth, bool MaximizingPlayer)
     {
         if(depth == 0 && GetState(mapState) != 0)
         {
             //
-            return 0;
+            return 0f;
         }
 
         if (MaximizingPlayer)
         {
             Alpha = -Mathf.Infinity;
-            foreach(Tile tile in mapState)
+            for(int i = 0; i < mapState.Length; i++) 
             {
-                if(tile.TileValue == 0)
+                if (mapState[i].TileValue == 0)
                 {
-                    Value = MinMax()
+                    int[] move = new int[] { i, -1 };
+                    Value = MinMax(Result(move, mapState), depth--, false);
+                    Alpha = Mathf.Max(Alpha, Value);
                 }
             }
+            return Alpha;
+        }
+        else
+        {
+            Beta = Mathf.Infinity;
+            for (int i = 0; i < mapState.Length; i++)
+            {
+                if (mapState[i].TileValue == 0)
+                {
+                    int[] move = new int[] { i, 1 };
+                    Value = MinMax(Result(move, mapState), depth--, true);
+                    Beta = Mathf.Min(Beta, Value);
+                }
+            }
+            return Beta;
         }
     }
 

@@ -289,10 +289,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &91879638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -368,10 +368,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &395275386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -417,6 +417,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b101973cdde9fec46b1582e65a7b22a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  map:
+  - {fileID: 1335744242}
+  - {fileID: 1461325830}
+  - {fileID: 1580590620}
+  - {fileID: 1477438392}
+  - {fileID: 1233215277}
+  - {fileID: 1348842207}
+  - {fileID: 1568319600}
+  - {fileID: 1197476290}
+  - {fileID: 1353119178}
+  Alpha: 0
+  Beta: 0
+  Value: 0
 --- !u!4 &410408275
 Transform:
   m_ObjectHideFlags: 0
@@ -491,10 +504,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -502,7 +515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &495878804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -791,10 +804,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -802,7 +815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &629243582
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -870,10 +883,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -881,7 +894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &982874660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -949,10 +962,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -960,7 +973,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1055496828
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1028,10 +1041,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1039,7 +1052,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1102089864
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1135,6 +1148,7 @@ GameObject:
   - component: {fileID: 1197476289}
   - component: {fileID: 1197476288}
   - component: {fileID: 1197476287}
+  - component: {fileID: 1197476290}
   m_Layer: 5
   m_Name: Button (Legacy) (7)
   m_TagString: Untagged
@@ -1244,6 +1258,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197476285}
   m_CullTransparentMesh: 1
+--- !u!114 &1197476290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197476285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1233215272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1284,7 @@ GameObject:
   - component: {fileID: 1233215276}
   - component: {fileID: 1233215275}
   - component: {fileID: 1233215274}
+  - component: {fileID: 1233215277}
   m_Layer: 5
   m_Name: Button (Legacy) (4)
   m_TagString: Untagged
@@ -1365,6 +1394,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233215272}
   m_CullTransparentMesh: 1
+--- !u!114 &1233215277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233215272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1335744237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1420,7 @@ GameObject:
   - component: {fileID: 1335744241}
   - component: {fileID: 1335744240}
   - component: {fileID: 1335744239}
+  - component: {fileID: 1335744242}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1486,6 +1530,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335744237}
   m_CullTransparentMesh: 1
+--- !u!114 &1335744242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335744237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1348842202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1556,7 @@ GameObject:
   - component: {fileID: 1348842206}
   - component: {fileID: 1348842205}
   - component: {fileID: 1348842204}
+  - component: {fileID: 1348842207}
   m_Layer: 5
   m_Name: Button (Legacy) (5)
   m_TagString: Untagged
@@ -1607,6 +1666,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348842202}
   m_CullTransparentMesh: 1
+--- !u!114 &1348842207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348842202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1353119173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1692,7 @@ GameObject:
   - component: {fileID: 1353119177}
   - component: {fileID: 1353119176}
   - component: {fileID: 1353119175}
+  - component: {fileID: 1353119178}
   m_Layer: 5
   m_Name: Button (Legacy) (8)
   m_TagString: Untagged
@@ -1728,6 +1802,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353119173}
   m_CullTransparentMesh: 1
+--- !u!114 &1353119178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353119173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1461325825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1828,7 @@ GameObject:
   - component: {fileID: 1461325829}
   - component: {fileID: 1461325828}
   - component: {fileID: 1461325827}
+  - component: {fileID: 1461325830}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -1849,6 +1938,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461325825}
   m_CullTransparentMesh: 1
+--- !u!114 &1461325830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461325825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1477438387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,6 +1964,7 @@ GameObject:
   - component: {fileID: 1477438391}
   - component: {fileID: 1477438390}
   - component: {fileID: 1477438389}
+  - component: {fileID: 1477438392}
   m_Layer: 5
   m_Name: Button (Legacy) (3)
   m_TagString: Untagged
@@ -1970,6 +2074,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477438387}
   m_CullTransparentMesh: 1
+--- !u!114 &1477438392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477438387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1568319595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +2100,7 @@ GameObject:
   - component: {fileID: 1568319599}
   - component: {fileID: 1568319598}
   - component: {fileID: 1568319597}
+  - component: {fileID: 1568319600}
   m_Layer: 5
   m_Name: Button (Legacy) (6)
   m_TagString: Untagged
@@ -2091,6 +2210,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568319595}
   m_CullTransparentMesh: 1
+--- !u!114 &1568319600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568319595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1580590615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,6 +2236,7 @@ GameObject:
   - component: {fileID: 1580590619}
   - component: {fileID: 1580590618}
   - component: {fileID: 1580590617}
+  - component: {fileID: 1580590620}
   m_Layer: 5
   m_Name: Button (Legacy) (2)
   m_TagString: Untagged
@@ -2212,6 +2346,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580590615}
   m_CullTransparentMesh: 1
+--- !u!114 &1580590620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580590615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea33275cfd46d249b444ed5622c2041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile
+  TileValue: 0
+  marked: 0
 --- !u!1 &1722181023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,10 +2498,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2361,7 +2509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1886334927
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2429,10 +2577,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2440,7 +2588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &2060516118
 CanvasRenderer:
   m_ObjectHideFlags: 0
