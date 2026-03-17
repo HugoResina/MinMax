@@ -9,12 +9,7 @@ public class GameManager : MonoBehaviour
 
     //public Tile[,] map = new Tile[,] { };
     public Tile[] map = new Tile[9];
-    //player tile
-    Tile one = new Tile();
-    //null tile
-    Tile zero = new Tile();
-    //ai tile
-    Tile minusOne = new Tile();
+
 
     //max-eval
     public float Alpha;
@@ -22,6 +17,8 @@ public class GameManager : MonoBehaviour
     public float Beta;
     //value
     public float Value;
+    public bool playerTurn = true;
+
 
     private void Awake()
     {
@@ -32,29 +29,104 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        one.TileValue = 1;
-        zero.TileValue = 0;
-        minusOne.TileValue = -1;
        
-        //tests de GetState
-        //Debug.Log("deberia ser 0: " + GetState(new Tile[] { zero, zero, zero, zero, zero, zero, zero, zero, zero }));
-        //Debug.Log("deberia ser 1: " + GetState(new Tile[] { one, zero, zero, zero, one, zero, zero, zero, one }));
-        //Debug.Log("deberia ser -1: " + GetState(new Tile[] { minusOne, minusOne, minusOne, zero, zero, zero, zero, zero, zero }));
-        //Debug.Log("deberia ser 0: " + GetState(new Tile[] { minusOne, zero, zero, minusOne, zero, one, zero, one, one }));
+       
+       
 
-        map = new Tile[9] { zero, zero, zero, zero, zero, zero, zero, zero, zero };
 
 
 
     }
 
-    
+
+    public void OnTileClicked(Tile tile)
+    {
+        if (!playerTurn) return;
+        if (tile.TileValue != 0) return;
+
+        // player
+        tile.TileValue = 1;
+        map[tile.index] = tile;
+        tile.UpdateVisual();
+        playerTurn = false;
+
+        if (CheckGame()) return;
+
+        // IA
+        Invoke(nameof(AITurn), 0.5f);
+    }
+    void AITurn()
+    {
+        int bestMove = -1;
+        float bestValue = Mathf.Infinity;
+
+        for (int i = 0; i < map.Length; i++)
+        {
+            if (map[i].TileValue == 0)
+            {
+                int[] move = new int[] { i, -1 };
+
+                float moveValue = MinMax(Result(move, map), 9, true);
+
+                if (moveValue < bestValue)
+                {
+                    bestValue = moveValue;
+                    bestMove = i;
+                }
+            }
+        }
+
+        if (bestMove != -1)
+        {
+            map[bestMove].TileValue = -1;
+            map[bestMove].UpdateVisual();
+        }
+
+        playerTurn = true;
+
+        CheckGame();
+    }
+    //void CheckGame()
+    //{
+    //    int state = GetState(map);
+
+    //    if (state == 1)
+    //    {
+    //        Debug.Log("Guanya el jugador");
+    //    }
+    //    else if (state == -1)
+    //    {
+    //        Debug.Log("Guanya la IA");
+    //    }
+    //    else if (state == 3)
+    //    {
+    //        Debug.Log("Empat");
+    //    }
+    //}
+    bool CheckGame()
+    {
+        int state = GetState(map);
+
+        if (state != 0)
+        {
+            Debug.Log("Fin del juego");
+            return true;
+        }
+
+        return false;
+    }
     public float MinMax(Tile[] mapState, int depth, bool MaximizingPlayer)
     {
-        if(depth == 0 && GetState(mapState) != 0)
+        int state = GetState(mapState);
+
+        if (state != 0)
         {
-            //
-            return 0f;
+            return state;
+        }
+
+        if (depth == 0)
+        {
+            return 0;
         }
 
         if (MaximizingPlayer)
@@ -65,7 +137,7 @@ public class GameManager : MonoBehaviour
                 if (mapState[i].TileValue == 0)
                 {
                     int[] move = new int[] { i, -1 };
-                    Value = MinMax(Result(move, mapState), depth--, false);
+                    Value = MinMax(Result(move, mapState), depth - 1, false);
                     Alpha = Mathf.Max(Alpha, Value);
                 }
             }
@@ -79,7 +151,7 @@ public class GameManager : MonoBehaviour
                 if (mapState[i].TileValue == 0)
                 {
                     int[] move = new int[] { i, 1 };
-                    Value = MinMax(Result(move, mapState), depth--, true);
+                    Value = MinMax(Result(move, mapState), depth - 1, true);
                     Beta = Mathf.Min(Beta, Value);
                 }
             }
@@ -142,9 +214,16 @@ public class GameManager : MonoBehaviour
     {
         //move should be [(x*3+y), value -1/0/1]
         //resulting state of taking a move in a given map
-        Tile[] mapClone = (Tile[])map.Clone();
+        Tile[] mapClone = new Tile[map.Length];
+
+        for (int i = 0; i < map.Length; i++)
+        {
+            mapClone[i] = new Tile();
+            mapClone[i].TileValue = map[i].TileValue;
+        }
+
         mapClone[move[0]].TileValue = move[1];
-        
+
         return mapClone;
     }
 }

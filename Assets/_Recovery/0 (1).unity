@@ -418,19 +418,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   map:
-  - {fileID: 1335744242}
-  - {fileID: 1461325830}
-  - {fileID: 1580590620}
-  - {fileID: 1477438392}
-  - {fileID: 1233215277}
-  - {fileID: 1348842207}
-  - {fileID: 1568319600}
-  - {fileID: 1197476290}
-  - {fileID: 1353119178}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Alpha: 0
   Beta: 0
   Value: 0
-  playerTurn: 1
 --- !u!4 &410408275
 Transform:
   m_ObjectHideFlags: 0
@@ -1220,19 +1219,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1197476288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1197476290}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1197476288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,8 +1271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 7
-  text: {fileID: 91879637}
+  marked: 0
 --- !u!1 &1233215272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,19 +1355,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1233215275}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1233215275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1433,8 +1407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 4
-  text: {fileID: 1102089863}
+  marked: 0
 --- !u!1 &1335744237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,19 +1491,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1335744240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1335744240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,8 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 0
-  text: {fileID: 1055496827}
+  marked: 0
 --- !u!1 &1348842202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,19 +1627,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1348842205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1348842205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,8 +1679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 5
-  text: {fileID: 395275385}
+  marked: 0
 --- !u!1 &1353119173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,19 +1763,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1353119176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1353119178}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1353119176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,8 +1815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 8
-  text: {fileID: 2060516117}
+  marked: 0
 --- !u!1 &1461325825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,19 +1899,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461325828}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1461325828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,8 +1951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 1
-  text: {fileID: 1886334926}
+  marked: 0
 --- !u!1 &1477438387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,19 +2035,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477438390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1477438390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2178,8 +2087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 3
-  text: {fileID: 629243581}
+  marked: 0
 --- !u!1 &1568319595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,19 +2171,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568319598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1568319598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,8 +2223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 6
-  text: {fileID: 982874659}
+  marked: 0
 --- !u!1 &1580590615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,19 +2307,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1580590618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1233215277}
-        m_TargetAssemblyTypeName: Tile, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1580590618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,8 +2359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tile
   TileValue: 0
-  index: 2
-  text: {fileID: 495878803}
+  marked: 0
 --- !u!1 &1722181023
 GameObject:
   m_ObjectHideFlags: 0
