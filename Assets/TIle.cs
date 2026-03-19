@@ -21,13 +21,10 @@ public class Tile : MonoBehaviour
         else
             text.text = "";
     }
-    //public void OnClick()
-    //{
-    //    GameManager.Instance.OnTileClicked(this);
-    //}
+   
     public void OnClick()
     {
-        Debug.Log("CLICK en tile " + index);
+        Debug.Log("Click en tile " + index);
         GameManager.Instance.OnTileClicked(this);
     }
 
